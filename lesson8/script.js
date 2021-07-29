@@ -7,10 +7,7 @@ const copy = (object) => {
 
         if (typeof value === 'object') {
             let child = {}
-            Object.keys(value).forEach((childKey) => {
-                child = {...child, [childKey]: value[childKey]}
-                return child;
-            });
+            child = copy(value);
             return newObject = {...newObject, [key]: child};
         } else {
             newObject = {...newObject, [key]: value}
