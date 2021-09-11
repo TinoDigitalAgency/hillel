@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, SansSerif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    padding: 100px 30px;
+    width: 100%;
+    max-width: 1170px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 18px 25px;
+    border: 1px #f1f1f1 solid;
+    border-radius: 12px;
+    transition: all 400ms;
+    font-size: 18px;
+    line-height: 18px;
+}
+.btn-primary {
+    padding: 18px 25px;
+    border: 1px #239923 solid;
+    background: #239923;
+    border-radius: 12px;
+    transition: all 400ms;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.btn-primary:focus {
+    outline: none;
+}
+.btn-primary:hover {
+    background: #fff;
+    color: #000;
+}
+input:focus,
+input:hover {
+    border-color: #000;
+    outline: none;
+}
+
+.input-wrapper {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-wrapper input {
+    flex: 0 0 calc(100% - 150px);
+    max-width: calc(100% - 150px);
+}
+
+.todo-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.todo-wrapper p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #8d8d8d;
+}
+.todo-item {
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px #f1f1f1;
+    background: #fcd18a;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 400ms;
+}
+.todo-item.completed {
+    background: #51cd51;
+    color: #fff;
+}
